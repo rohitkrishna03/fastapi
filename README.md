@@ -62,3 +62,7 @@ git commit -m "recent commit in read me file "
 git branch -M master
 
 git push origin master
+
+here when we push to master origin , open the git hud and the repo which you are working in and and see master branch , there you can see contribute in the middle of tha page which is on the rigth side.
+
+there you can see contribute , when you click on the contribite you can see open pull request, when you click on the pull request.
