@@ -52,3 +52,13 @@ now any one canrun this file by using thos cammands because we hve public stored
 
 docker pull YOUR_USERNAME/fastapi-hello:latest
 docker run -p 8000:8000 YOUR_USERNAME/fastapi-hello
+
+here we we alsoi see how to create a pull request and merge the file that we made changed first after making the changes we need to type few commands in  our vs code teminal like 
+
+git add .
+
+git commit -m "recent commit in read me file "
+
+git branch -M master
+
+git push origin master
