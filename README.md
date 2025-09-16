@@ -14,7 +14,7 @@ after that we neeed to run the docker file on the port which the command looks l
 
 "docker run -p 8000:8000 fastapi-hello"
 
-HERE NOW WHAT WE WILL BE DOING IS 
+HERE NOW WHAT WE WILL BE DOING IS
 
 create a folder name is .github/workflow/ci.yml
 
@@ -34,7 +34,7 @@ git push origin master
 
 after that go to the git hud, click on your repo on which you are working and after that on top you can see the actions tab open it and there you can see the workflow of that thing.
 
-HERE FIRST WE NEED TO CREATE A REPOSITORY IN DOCKER HUB WHICHIS ONW WEBSITER 
+HERE FIRST WE NEED TO CREATE A REPOSITORY IN DOCKER HUB WHICHIS ONW WEBSITER
 
 ""HUB.DOCKER.COM"" here we can create new repo by logging inot our account.
 
@@ -53,7 +53,7 @@ now any one canrun this file by using thos cammands because we hve public stored
 docker pull YOUR_USERNAME/fastapi-hello:latest
 docker run -p 8000:8000 YOUR_USERNAME/fastapi-hello
 
-here we we alsoi see how to create a pull request and merge the file that we made changed first after making the changes we need to type few commands in  our vs code teminal like 
+here we we alsoi see how to create a pull request and merge the file that we made changed first after making the changes we need to type few commands in  our vs code teminal like
 
 git add .
 
@@ -65,4 +65,21 @@ git push origin master
 
 here when we push to master origin , open the git hud and the repo which you are working in and and see master branch , there you can see contribute in the middle of tha page which is on the rigth side.
 
+the messahe on the page be like ""This branch is 2 commits behind------------contribute""
+
+once clicked on contribute, we can see --open pull request, once clicked in that.
+
+it take oto an other page which is comparing changes, there we need to add title and descriptiona dn click on ------create pull request
+
+after that we need to merge pull request.
+
+if seen any issue in that merging we need to comment and leave , or else if it is successful we need to close pull request
+
 there you can see contribute , when you click on the contribite you can see open pull request, when you click on the pull request.
+
+
+HERE IF WE WANT TO PULL THE IMAGE FROM THE DOCKER HUB, BELOW ARE THE STEPS 
+
+- docker login
+- docker search rohitzdoc/fastapi-hello
+- docker pull rohitzdoc/fastapi-hello
