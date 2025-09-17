@@ -77,9 +77,21 @@ if seen any issue in that merging we need to comment and leave , or else if it i
 
 there you can see contribute , when you click on the contribite you can see open pull request, when you click on the pull request.
 
-
-HERE IF WE WANT TO PULL THE IMAGE FROM THE DOCKER HUB, BELOW ARE THE STEPS 
+HERE IF WE WANT TO PULL THE IMAGE FROM THE DOCKER HUB, BELOW ARE THE STEPS
 
 - docker login
 - docker search rohitzdoc/fastapi-hello
 - docker pull rohitzdoc/fastapi-hello
+  till here we have docrized the application
+
+NOW WE WILL BE SEEING HOW TO DEPLOY INTO THE AWS CLOUD/ SERVER
+
+- before that we need to set the secrets in the git hub repo
+- here we set the secrets by going inot github repo where the prject is located,
+- open that project -> settings ->secrets and varaible ->actions ->new repo secret -> add all the name and secrets that are required for deployment.
+- now i have added the credentials into the github , so it can now easily pull the secrets from the git hub.
+- we hwave created a file called deploy.yml and here , as we are working with the git hub actions we dont need to do any command except these 3 commands
+- git add .
+- git commit -m "deploy to ec2"
+- git push origin main
+- in github actions we can see the process and workflow of that.
